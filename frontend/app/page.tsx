@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <div className="hero-bg h-screen w-full bg-cover bg-no-repeat bg-top absolute top-0" />
       <HeroSection />
     </>
   );

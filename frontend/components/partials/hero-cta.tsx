@@ -1,5 +1,6 @@
 "use client";
 
+import Form from "next/form";
 import { ChevronRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -11,19 +12,30 @@ export const HeroCTA = () => {
   useEffect(() => {
     inputRef.current?.focus();
   });
+  const submit = (payload: FormData) => {
+    console.log(inputRef.current?.value);
+  };
 
   return (
-    <div className="w-full max-w-xl flex flex-col items-center gap-4 px-2">
-      <Input
-        ref={inputRef}
-        id="email"
-        placeholder="Email address"
-        className="bg-black/30 border-border/40 placeholder:text-white/80 text-sm h-10"
-      />
-      <Button variant="destructive" className="h-10 text-base">
-        <span>Get Started</span>
-        <ChevronRight />
-      </Button>
+    <div className="w-full">
+      <Form action={submit} className="w-full flex max-md:flex-col items-center gap-4 px-2 md:h-14">
+        <Input
+          ref={inputRef}
+          id="email"
+          type="email"
+          placeholder="Email address"
+          className="bg-black/30 border-border/40 placeholder:text-white/80 text-sm md:text-lg h-10 md:h-full"
+          required
+        />
+        <Button
+          type="submit"
+          variant="destructive"
+          className="h-10 text-lg md:h-full md:px-8"
+        >
+          <span>Get Started</span>
+          <ChevronRight />
+        </Button>
+      </Form>
     </div>
   );
 };

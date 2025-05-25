@@ -5,20 +5,24 @@ import { HeroCTA } from "./hero-cta";
 
 export const HeroSection = () => {
   return (
-    <section id="hero" className=" max-h-screen h-full w-full">
-      <div className="hero-bg h-full w-full bg-cover bg-no-repeat bg-center absolute" />
+    <section
+      id="hero"
+      className="relative max-h-screen h-[calc(100%_-_5.5rem)] w-full top-22"
+    >
       <div className="hero-content  relative w-full h-full z-3 flex items-center justify-center">
-        <div className="text-white w-[calc(100%_-_2rem)] flex flex-col items-center gap-4">
-          <div className="headline text-white flex flex-col items-center w-full gap-2">
-            <h1 className="text-2xl md:text-5xl -font-medium text-center">
+        <div className="text-white w-[calc(100%)] max-w-[calc(624px)] flex flex-col items-center gap-4 md:gap-10">
+          <div className="headline text-white flex flex-col items-center w-full gap-2 md:gap-4">
+            <h1 className="text-2xl md:text-6xl -font-black text-center">
               Unlimited movies, TV shows, and more
             </h1>
-            <span className="text-sm md:text-base">Starts at US$2.99. Cancel anytime</span>
+            <span className="text-sm md:text-lg md:font-medium">
+              Starts at US$2.99. Cancel anytime.
+            </span>
           </div>
           <div className="cta flex flex-col items-center w-full gap-4">
-            <label htmlFor="email" className="text-center text-sm md:text-base">
+            <label htmlFor="email" className="text-center text-sm md:text-lg">
               Ready to watch? Enter your email to create or restart your
-              membership
+              membership.
             </label>
             <HeroCTA />
           </div>
