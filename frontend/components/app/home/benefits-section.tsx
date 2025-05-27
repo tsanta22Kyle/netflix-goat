@@ -2,12 +2,12 @@ import { whyToJoinData } from "@/utils/data";
 
 export const BenefitsSection = () => {
   return (
-    <section id="feature-benefits" className="relative h-full md:max-h-108 w-full top-8">
+    <section id="feature-benefits" className="relative h-full md:max-h-108 w-full top-8 md:top-12">
       <div className="wrapper h-full w-full">
         <div className="heading h-16 flex items-center justify-start">
-          <h2 className="text-white text-xl md:text-2xl md:-font-medium">More Reasons to Join</h2>
+          <h2 className="text-white text-xl md:text-2xl -font-medium">More Reasons to Join</h2>
         </div>
-        <div className="cards md:flex items-center justify-between md:h-[calc(100%_-_4rem)] h-full space-y-4">
+        <div className="cards md:flex-wrap md:flex items-center md:justify-center max-md:gap-4 lg:justify-between md:h-[calc(100%_-_4rem)] h-full max-md:space-y-4">
           {whyToJoinData.map((data, k) => (
             <BenefitCard data={data} key={k} />
           ))}
