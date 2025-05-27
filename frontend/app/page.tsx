@@ -1,12 +1,22 @@
-import { Header } from "@/components/global/header";
-import { HeroSection } from "@/components/partials/hero-section";
+import { Header } from "@/components/layout/header";
+import { HeroCTA } from "@/components/app/home/hero-cta";
+import { HeroSection } from "@/components/app/home/hero-section";
+import { TrendingSection } from "@/components/app/home/trending-section";
+import { BenefitsSection } from "@/components/app/home/benefits-section";
+import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
   return (
     <>
       <Header />
       <div className="hero-bg h-screen w-full bg-cover bg-no-repeat bg-top absolute top-0" />
-      <HeroSection />
+      <div className="h-screen w-full">
+        <HeroSection />
+      </div>
+      {/* <TrendingSection /> */}
+      <BenefitsSection />
+      {/* <HeroCTA />
+      <Footer /> */}
     </>
   );
 }

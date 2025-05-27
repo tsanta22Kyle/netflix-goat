@@ -2,8 +2,8 @@
 
 import Form from "next/form";
 import { ChevronRight } from "lucide-react";
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+import { Button } from "../../ui/button";
+import { Input } from "../../ui/input";
 import { useEffect, useRef } from "react";
 
 export const HeroCTA = () => {
@@ -24,13 +24,13 @@ export const HeroCTA = () => {
           id="email"
           type="email"
           placeholder="Email address"
-          className="bg-black/30 border-border/40 placeholder:text-white/80 text-sm md:text-lg h-10 md:h-full"
+          className="bg-black/30 border-border/40 placeholder:text-white/80 text-sm md:text-lg h-10 md:h-full md:w-3/5"
           required
         />
         <Button
           type="submit"
           variant="destructive"
-          className="h-10 text-lg md:h-full md:px-8"
+          className="h-10 text-lg md:text-xl md:h-full md:px-8 md:w-2/5 tracking-wide hover:bg-destructive/80"
         >
           <span>Get Started</span>
           <ChevronRight />
