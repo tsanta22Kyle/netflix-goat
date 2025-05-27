@@ -13,7 +13,7 @@ export default function Home() {
       <div className="h-screen w-full">
         <HeroSection />
       </div>
-      {/* <TrendingSection /> */}
+      <TrendingSection />
       <BenefitsSection />
       {/* <HeroCTA />
       <Footer /> */}
