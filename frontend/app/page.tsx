@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/app/home/hero-section";
 import { TrendingSection } from "@/components/app/home/trending-section";
 import { BenefitsSection } from "@/components/app/home/benefits-section";
 import { Footer } from "@/components/layout/footer";
+import { QuestionSection } from "@/components/app/home/questions-section";
 
 export default function Home() {
   return (
@@ -15,8 +16,13 @@ export default function Home() {
       </div>
       <TrendingSection />
       <BenefitsSection />
-      {/* <HeroCTA />
-      <Footer /> */}
+      <QuestionSection />
+      <HeroCTA
+        className="relative h-64"
+        id="membership_page"
+        centeredLayout={false}
+      />
+      {/*  <Footer /> */}
     </>
   );
 }

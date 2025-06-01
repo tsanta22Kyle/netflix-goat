@@ -22,12 +22,30 @@ const whyToJoinData = [
 ];
 
 const frequentlyAskedQuestions = [
-  "What is Netflix?",
-  "How much des Netflix cost?",
-  "Where can I watch?",
-  "How do I cancel?",
-  "What can I watch on Netflix?",
-  "Is Netflix good for kids?",
+  {
+    q: "What is Netflix?",
+    res: "",
+  },
+  {
+    q: "How much des Netflix cost?",
+    res: "",
+  },
+  {
+    q: "Where can I watch?",
+    res: "",
+  },
+  {
+    q: "How do I cancel?",
+    res: "",
+  },
+  {
+    q: "What can I watch on Netflix?",
+    res: "",
+  },
+  {
+    q: "Is Netflix good for kids?",
+    res: "",
+  },
 ];
 
 export { frequentlyAskedQuestions, whyToJoinData };
