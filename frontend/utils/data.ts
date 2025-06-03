@@ -48,4 +48,27 @@ const frequentlyAskedQuestions = [
   },
 ];
 
-export { frequentlyAskedQuestions, whyToJoinData };
+const menuList = [
+  {
+    label : "Home",
+    to : "/browse"
+  },
+  {
+    label : "TV Shows",
+    to : "/browse"
+  },
+  {
+    label : "Movies",
+    to : "/browse"
+  },
+  {
+    label : "New & Popular",
+    to : "/browse"
+  },
+  {
+    label : "My List",
+    to : "/browse"
+  },
+]
+
+export { frequentlyAskedQuestions, whyToJoinData, menuList };
