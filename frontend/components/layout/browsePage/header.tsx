@@ -1,10 +1,13 @@
 "use client";
 
 import { Logo } from "@/components/icons/logo";
+import profile from "../../../public/assets/profile_img.png"
 import { menuList } from "@/utils/data";
 import { Bell, ChevronDown, CircleUser, Search } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 // import { Button } from "@/components/ui/button"
 
 export const Header = () => {
@@ -21,8 +24,8 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-[100%] h-[70px] fixed flex items-center top-0 p-5 ${
-        scrollY < 20 ? " bg-gradient-to-b from-black to-transparent " : "bg-black"
+      className={`w-[100%] h-[70px] fixed flex items-center top-0 p-5 transition-all duration-250 bg-gradient-to-b from-black   ${
+        scrollY < 20 ? " to-transparent " : "  to-[#1e1e1e]"
       } z-100 `}
     >
       <nav className="flex w-full justify-between p-9 items-center  ">
@@ -69,10 +72,11 @@ const Options = () => {
 
 const ProfileOptions = () => {
   return (
-    <span className="flex items-center">
-      <CircleUser></CircleUser>
-      <ChevronDown />
-    </span>
+    <Button className="flex items-center bg-transparent hover:bg-transparent cursor-pointer">
+      {/* <CircleUser></CircleUser> */}
+      <Image src={profile} alt="userIcon" ></Image>
+      <ChevronDown fill="white" size={32} strokeWidth={0} />
+    </Button>
   );
 };
 

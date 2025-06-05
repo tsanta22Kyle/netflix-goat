@@ -3,3 +3,6 @@
   margin: auto;
   max-width: 100%;
 }
+body{
+  overflow-x: hidden;
+}
