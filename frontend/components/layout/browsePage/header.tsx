@@ -21,13 +21,22 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-[100%] h-[70px] flex items-center top-0  ${
-        scrollY == 0 ? "bg-transparent" : "bg-black"
-      } `}
+      className={`w-[100%] h-[70px] fixed flex items-center top-0 p-5 ${
+        scrollY < 20 ? " bg-gradient-to-b from-black to-transparent " : "bg-black"
+      } z-100 `}
     >
-      <nav className="flex w-full justify-between p-9 items-center ">
-        <div className="flex items-center gap-10">
-          <Logo></Logo>
+      <nav className="flex w-full justify-between p-9 items-center  ">
+        <div className="flex items-center gap-10 ">
+          <div className="">
+      <Link href={""}>
+        <img
+          src={"http://localhost:3000/img/Netflix_Logo_RGB.png"}
+          className="w-25 h-10 lg:w-33 lg:h-14"
+          alt="Logo Netflix"
+          loading="lazy"
+        />
+      </Link>
+    </div>
           <div className=" max-[762px]:hidden">
             <Navigation menuList={menuList}></Navigation>
           </div>
@@ -44,6 +53,9 @@ const Options = () => {
     <ul className="flex items-center gap-5">
       <li className="">
         <Search />
+      </li>
+      <li>
+        <p>Children</p>
       </li>
       <li className="">
         <Bell />
