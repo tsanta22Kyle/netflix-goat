@@ -1,9 +1,13 @@
 import Image from "next/image";
-import card1 from "../../../public/assets/cards/card1.jpg"
-export function Card(){
+
+interface cardProps{
+    imgSrc : string
+}
+
+export function Card({imgSrc}:cardProps){
     return(
         <div className="">
-            <Image src={card1} alt="card" className="w-[250px] rounded-sm"></Image>
+            <Image src={imgSrc} alt="card" width={300} height={200} className="min-w-[270px] rounded-[5px]"></Image>
         </div>
     )
 }

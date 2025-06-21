@@ -1,3 +1,5 @@
+import { movie } from "./types/movie";
+
 const whyToJoinData = [
   {
     title: "Enjoy your TV",
@@ -71,4 +73,52 @@ const menuList = [
   },
 ]
 
-export { frequentlyAskedQuestions, whyToJoinData, menuList };
+
+const moviesList : movie[] = [
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card9.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card6.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card2.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card11.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card10.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card7.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card4.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card2.jpg"
+  },
+  {
+    title : "",
+    description : "",
+    image : "/assets/cards/card1.jpg"
+  },
+]
+export { frequentlyAskedQuestions, whyToJoinData, menuList ,moviesList};

@@ -3,22 +3,24 @@ import heroImg from "../../../public/img/hero_banner.jpg";
 import heroTitle from "../../../public/assets/hero_title.png";
 import { Button } from "@/components/ui/button";
 import { Info, Play } from "lucide-react";
-import { CardList } from "./card-list";
+import { SwipeCards } from "./card-list";
+import { moviesList } from "@/utils/data";
 export const Hero = () => {
   return (
-    <section className="flex flex-col h-[90dvh]">
+    <section className="flex flex-col  ml-[50px] relative ">
       <Image
         className={`w-full  mask-l-from-35%  z-3 `}
         src={heroImg}
         alt="hero"
+        id="hero-image"
       />
 
       <div
         id="desc"
-        className="absolute flex flex-col pl-[50px] z-4 w-1/2 h-[60dvh] bottom-0  gap-20"
+        className="absolute flex flex-col  z-4 w-full  top-[25%]  gap-20 "
       >
-        <div className="flex flex-col pl-[50px] gap-4">
-          <Image className="w-1/2 " src={heroTitle} alt="hero title"></Image>
+        <div className="flex flex-col  gap-4 w-1/2 h-[70vh]  ">
+          <Image className="w-[75%] " src={heroTitle} alt="hero title"></Image>
 
         <p className="text-white">
           Discovering his ties to a secret ancient order, a young man living in
@@ -36,7 +38,10 @@ export const Hero = () => {
           </Button>
         </div>
         </div>
-        <CardList></CardList>
+        <div className=" ">
+
+        <SwipeCards  movies={moviesList} title="popular on netflix"></SwipeCards>
+        </div>
       </div>
     </section>
   );
