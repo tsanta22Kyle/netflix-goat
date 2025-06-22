@@ -22,7 +22,7 @@ export default function Home() {
         id="membership_page"
         centeredLayout={false}
       />
-      {/*  <Footer /> */}
+       <Footer />
     </>
   );
 }

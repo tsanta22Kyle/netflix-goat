@@ -1,9 +1,7 @@
-"use client";
-
-import { Logo } from "@/components/icons/logo";
+"use client";;
 import profile from "../../../public/assets/profile_img.png"
 import { menuList } from "@/utils/data";
-import { Bell, ChevronDown, CircleUser, Search } from "lucide-react";
+import { Bell, ChevronDown, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -32,7 +30,7 @@ export const Header = () => {
         <div className="flex items-center gap-10 ">
           <div className="">
       <Link href={""}>
-        <img
+        <Image
           src={"http://localhost:3000/img/Netflix_Logo_RGB.png"}
           className="w-25 h-10 lg:w-33 lg:h-14"
           alt="Logo Netflix"

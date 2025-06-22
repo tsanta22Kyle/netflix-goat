@@ -20,7 +20,7 @@ export const HeroCTA = ({ className, id, centeredLayout }: CTAProps) => {
   useEffect(() => {
     inputRef.current?.focus();
   });
-  const submit = (payload: FormData) => {
+  const submit = (/*payload: FormData*/) => {
     console.log(inputRef.current?.value);
   };
 

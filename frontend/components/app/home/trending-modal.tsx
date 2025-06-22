@@ -13,7 +13,7 @@ export const TrendingModal = ({ setIsOpen, id }: TrendingModalProps) => {
   };
   return createPortal(
     <div
-      className="background fixed top-0 left-0 w-full h-screen z-1000 bg-black/10"
+    className="background fixed top-0 left-0 w-full h-screen z-1000 bg-black/10"
       onClick={closeModal}
     >
       <div className="wrapper w-full h-screen relative flex items-center justify-center">
@@ -22,6 +22,7 @@ export const TrendingModal = ({ setIsOpen, id }: TrendingModalProps) => {
         </div>
       </div>
     </div>,
-    document?.getElementById("trending")!
+    //@ts-expect-error may be null
+    document?.getElementById("trending")
   );
 };
