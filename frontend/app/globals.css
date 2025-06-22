@@ -1,7 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./layout.css";
+/* @custom-variant dark(&: is(.dark *)); */
 
-@custom-variant dark (&:is(.dark *));
 @font-face {
   font-family: "NetflixSans Medium";
   src: url("../public/fonts/NetflixSans_W_Md.woff2");
@@ -23,25 +24,13 @@
   font-display: swap;
 }
 
-.hero-bg {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
-    url("../public/img/MG-en-20250519-TRIFECTA-perspective_46262a13-7894-43ae-ac23-4e444620b06b_large.jpg");
-}
-
-.-font-medium {
-  font-family: "NetflixSans Medium";
-}
-.-font-bold {
-  font-family: "NetflixSans Bold";
-}
-.-font-regular {
+* {
   font-family: "NetflixSans Regular";
-}
-.-font-black {
-  font-family: "NetflixSans Black";
 }
 
 @theme inline {
+  --color-blue-custom: var(--blue-custom);
+  --color-purple-custom: var(--purple-custom);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -87,7 +76,8 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  /* --primary: oklch(0.208 0.042 265.755); */
+  --primary: hsl(357, 84%, 41%);
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -114,6 +104,9 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
+
+  --blue-custom: hsl(229, 46%, 18%);
+  --purple-custom: hsl(330, 39%, 9%);
 }
 
 .dark {
@@ -148,6 +141,24 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 2px white;
+  }
+  .-font-black {
+    font-family: "NetflixSans Black";
+  }
+  .-font-medium {
+    font-family: "NetflixSans Medium";
+  }
+  .-font-bold {
+    font-family: "NetflixSans Bold";
+  }
+  .-font-regular {
+    font-family: "NetflixSans Regular";
+  }
 }
 
 @layer base {
