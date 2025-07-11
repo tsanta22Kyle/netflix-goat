@@ -43,7 +43,7 @@ const QuestionItem = ({ question, className }: QuestionItemProps) => {
       <Accordion type="multiple" className="h-full text-white">
         <AccordionItem value={question.q} className="h-full bg-[#2D2D2D] mt-2">
           <AccordionTrigger className="h-21 flex items-center hover:no-underline px-4 md:px-6 hover:bg-[#414141]">
-            <h4 className="md:text-2xl text-base">{question.q}</h4>
+            <h4 className="md:text-2xl text-lg">{question.q}</h4>
           </AccordionTrigger>
           <AccordionContent className="md:text-2xl px-4 md:px-6 py-4">
             {question.res.map((r) => {
