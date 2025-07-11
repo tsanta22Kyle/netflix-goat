@@ -8,7 +8,7 @@ export const Footer = () => {
           <label className="underline text-lg">Questions? Contact us.</label>
         </div>
         <div className="w-full">
-          <ul className="flex-wrap flex w-full *:w-full *:md:w-1/2 *:lg:w-1/3 *:mt-4 py-4 *:font-medium">
+          <ul className="flex-wrap flex w-full *:w-full *:md:w-1/2 *:lg:w-1/3 *:xl:w-1/4 *:mt-4 py-4 *:font-medium">
             <li className="underline text-sm">
               <Link href="">FAQ</Link>
             </li>
