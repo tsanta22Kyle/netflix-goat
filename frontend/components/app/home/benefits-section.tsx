@@ -27,9 +27,11 @@ type CardProps = {
 };
 const BenefitCard = ({ data }: CardProps) => {
   return (
-    <div className="benefit-card w-full h-42 md:w-59 lg:w-69 md:h-88 relative bg-linear-to-tl to-blue-custom from-purple-custom rounded-2xl px-4 py-4 md:py-8">
+    <div className="benefit-card w-full h-42 md:w-60 md:h-82 relative bg-linear-to-tl to-blue-custom from-purple-custom rounded-2xl px-4 py-4 md:py-8">
       <div className="wrapper w-full h-full space-y-4 flex flex-col items-start">
-        <h4 className={`text-lg md:text-2xl text-white ${NetflixMedium.className}`}>
+        <h4
+          className={`text-lg md:text-2xl text-white ${NetflixMedium.className}`}
+        >
           {data.title}
         </h4>
         <p className="text-sm md:text-lg text-muted-foreground">

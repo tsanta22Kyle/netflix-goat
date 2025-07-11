@@ -33,14 +33,18 @@ export const HeroCTA = ({ className, id, centeredLayout }: CTAProps) => {
     >
       <label
         htmlFor={id}
-        className={`relative ${centeredLayout ? `text-center` : `text-left`} text-white flex items-center text-sm md:text-base h-1/3`}
+        className={`relative ${
+          centeredLayout ? `text-center` : `text-left`
+        } text-white flex items-center text-sm md:text-base h-1/3`}
       >
         Ready to watch? Enter your email to create or restart your membership.
       </label>
       <div className="w-full h-2/3">
         <Form
           action={submit}
-          className={`w-full flex max-md:flex-col ${centeredLayout ? `items-center` : `items-start`} gap-4 md:h-14`}
+          className={`w-full flex max-md:flex-col ${
+            centeredLayout ? `items-center` : `items-start`
+          } gap-4 md:h-14`}
         >
           <Input
             ref={inputRef}

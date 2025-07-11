@@ -17,12 +17,15 @@ export default function Home() {
       <TrendingSection />
       <BenefitsSection />
       <QuestionSection />
-      <HeroCTA
-        className="relative h-64"
-        id="membership_page"
-        centeredLayout={false}
-      />
-       <Footer />
+      <div className="h-16 w-full" aria-hidden></div>
+      <div className="h-64 w-196">
+        <HeroCTA
+          className="relative h-full"
+          id="membership_page"
+          centeredLayout={false}
+        />
+      </div>
+      <Footer />
     </>
   );
 }

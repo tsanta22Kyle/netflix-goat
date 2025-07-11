@@ -60,7 +60,7 @@ const Card = ({ index }: CardProps) => {
   const showDescription = () => setIsOpen(!isOpen);
   return (
     <div
-      className="relative p-1 w-full max-w-56 h-full! m-auto bg-white/10 rounded-lg hover:scale-105 duration-400 transition-all"
+      className="relative p-1 w-full max-w-46 h-64 m-auto bg-white/10 rounded-lg hover:scale-105 duration-400 transition-all"
       onClick={showDescription}
     >
       <Image
