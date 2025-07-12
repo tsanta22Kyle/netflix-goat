@@ -22,19 +22,22 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-[100%] h-[70px] fixed flex items-center top-0 p-5 transition-all duration-250 bg-gradient-to-b from-black   ${
+      className={`w-[100%] h-[70px] fixed flex items-center top-0 sm:p-5 transition-all duration-250 bg-gradient-to-b from-black   ${
         scrollY < 20 ? " to-transparent " : "  to-[#1e1e1e]"
       } z-100 `}
     >
-      <nav className="flex w-full justify-between p-9 items-center  ">
+      <nav className="flex w-full justify-between sm:p-9 p-2 items-center  ">
         <div className="flex items-center gap-10 ">
-          <div className="">
+          <div className="min-w-[100px] min-h-[50px]">
       <Link href={""}>
         <Image
           src={"http://localhost:3000/img/Netflix_Logo_RGB.png"}
-          className="w-25 h-10 lg:w-33 lg:h-14"
+          className="w-[100px] h-[50px] "
           alt="Logo Netflix"
           loading="lazy"
+          width={0}
+          height={0}
+          unoptimized={true}
         />
       </Link>
     </div>

@@ -1,5 +1,6 @@
 import { Hero } from "@/components/app/browse/hero-section";
 import { MainContent } from "@/components/app/browse/main-content";
+import Footer from "@/components/layout/browsePage/footer";
 import { Header } from "@/components/layout/browsePage/header";
 
 export default function Browse(){
@@ -8,6 +9,7 @@ export default function Browse(){
             <Header></Header>
             <Hero></Hero>
             <MainContent></MainContent>
+            <Footer></Footer>
         </>
     )
 }

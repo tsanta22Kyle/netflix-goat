@@ -3,7 +3,7 @@ import { SwipeCards } from "./card-list";
 
 export function MainContent(){
     return(
-        <div className="mt-20 ml-[50px]">
+        <div className="sm:mt-[10vh] p-5 sm:ml-[50px] overflow-x-hidden">
             <div className="flex flex-col ">
 
             <SwipeCards movies={moviesList} title="Blockbuster Movies"></SwipeCards>
